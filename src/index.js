@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { WatchlistContextProvider } from './store/watchlist-context';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <WatchlistContextProvider>
+      <App />
+    </WatchlistContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
